@@ -66,6 +66,7 @@ async function getfechas() { //obtine las ultimas 10 fechas de la moneda selecci
         const fechas = monedaSeleccionada.map(moneda => moneda.fecha);
         const fechasFormateadas = fechas.map(formatearFecha);
         const ultimas10Fechas = fechasFormateadas.slice(0, 10);
+        ultimas10Fechas.reverse();
         return ultimas10Fechas;
     } catch (error) {
         console.error(error);
