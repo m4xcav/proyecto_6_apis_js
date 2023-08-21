@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #212529;
+}
+.contenedor{
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+hr{
+    color: aliceblue;
+}
+#grafica{
+    margin-top: 20px;
+    background-color: white;
+}
+.card{
+    margin: 0 auto;
+    color: black;
+    width: 18rem;
+}
+.grafica{
+    margin: 0 auto;
+    width: 700px;
+}
