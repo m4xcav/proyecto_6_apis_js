@@ -65,7 +65,7 @@ async function getfechas() { //obtine las ultimas 10 fechas de la moneda selecci
         const monedaSeleccionada = data.serie;
         const fechas = monedaSeleccionada.map(moneda => moneda.fecha);
         const fechasFormateadas = fechas.map(formatearFecha);
-        const ultimas10Fechas = fechasFormateadas.slice(-10);
+        const ultimas10Fechas = fechasFormateadas.slice(0, 10);
         return ultimas10Fechas;
     } catch (error) {
         console.error(error);
@@ -79,7 +79,7 @@ async function getvalorh() { //obtiene los ultimos 10 valores de la moneda selec
             const data = await res.json();
             const monedaSeleccionada = data.serie;
             const valorh = monedaSeleccionada.map(moneda => moneda.valor);
-            const valorh10 = valorh.slice(-10);
+            const valorh10 = valorh.slice(0, 10);
             return valorh10;
         } catch (error) {
             console.error(error);
